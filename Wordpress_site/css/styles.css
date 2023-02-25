@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+h1{
+    margin-top: 52px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 24px;
+}
+h2{
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+h3{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 12px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+p{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+.container__text:first-child{
+    margin-bottom: 35px;
+}
+.container__text span, h2{
+    color: #F9BF3B;
+}
+.main-screen{
+    min-height: 800px;
+    background: url("https://github.com/yankovalenko94/Webdev2019/blob/master/Wordpress/img/bg/main_bg.jpg?raw=true") center/cover no-repeat;
+}
+.container{
+    margin: 0 auto;
+    width: 60%;
+}
+.logo{
+   align-items: center;
+    padding-top: 40px;
+    color: white;
+    margin-bottom: 63px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.logo img{
+    margin:0 auto 10px auto;
+    display: block;
+}
+.container__text{
+    text-align: center;
+    color: white;
+    
+}
+.container__arrow{
+    color: white;
+    text-align: center;
+}
+.container__arrow img{
+    display: block;
+    margin: 4px auto 0 auto; 
+}
+
+
+button{
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    cursor: pointer;
+    display: block;
+    margin: 58px auto 68px;
+    font-family: 'RobotoCondensed';
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    box-shadow: inset 0px -5px 0px 4px rgba(0, 0, 0, 0.18);
+    color: white;
+    font-size: 21px;
+    line-height: 24px;
+    padding: 22px 15px;
+    width: 313px;
+    height: 72px;
+}
+hr{
+    background-color: #F9BF3B;
+    width: 217px;
+    height: 4px;
+    margin: 16px auto 20px auto;
+}
+p{
+    text-align: center;
+}
+
+.review{
+    min-height: 604px;
+    background: #EFEFEF;
+}.review .container p{
+    font-size: 15px;
+    line-height: 21px;
+}
+.row{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.picture{
+    width: 30%;
+}
+.picture img{
+    width: 100%;
+    margin-bottom: 26px;
+}
+.optimisation{
+    min-height: 550px;
+    background: url("https://github.com/yankovalenko94/Webdev2019/blob/master/Wordpress/img/bg/woman_bg.jpg?raw=true") no-repeat left;
+    
+}
+.optimisation__img{
+    display: none;
+}
+.optimisation h3{
+    color: #299CBD;
+    font-weight: 900;
+    font-size: 22px;
+}
+.optimisation p, .optimisation h3{
+    margin-left: 33%;
+    text-align: left;
+}
+.optimisation .container p{
+    font-size: 18px;
+    line-height: 27px;
+}
+.oportunity{
+    min-height: 447px;
+    background: rgba(44, 44, 44, 0.3);
+    mix-blend-mode: multiply;
+    color: white;
+}
+.oportunity__row{
+    display: flex;
+    justify-content: space-between;
+}
+.oportunity__row__element{
+    width: 20%;
+    text-align: center;
+}
+.icon{
+    position: relative;
+    margin: 0 auto 20px;
+    width: 115px;
+    height: 115px;
+    background: #B4E2FF;
+    border-radius: 50%;
+}
+.icon img{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+}
+.bonus{
+    min-height: 628px;
+    background: #EFEFEF;
+}
+.gift{
+    display: block;
+    padding-top: 86px;
+    margin: 0 auto 28px;
+}
+.note{
+    min-height: 515px;
+}
+.blue-text{
+    color: #299CBD;
+    font-weight: 900;
+    font-size: 36px;
+    margin: 48px 0 23px 0;
+    line-height: 12px;
+    text-align: center;
+}
+.note .container img{
+    display: block;
+    padding-top: 82px;
+    margin: 0 auto 53px;
+}
+.note h3{
+    margin: 0;
+    padding: 0;
+}
+
+.gray-text{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 64px;
+}
+
+footer{
+    height: 166px;
+    padding-top: 55px;
+    background: black;
+    color: #888888;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+.layer{
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.form{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background: white;
+    margin: 100px auto;
+    padding: 50px;
+}
+.form-close{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+}
+.form-header{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+input{
+    padding: 5px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+}
+.form-button{
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1400px){
+    .container__text h2{
+        font-size: 30px;
+    }
+    .container__text h1{
+        font-size: 60px;
+    }
+    button{
+        margin: 48px auto 58px;
+    }
+    .logo{
+        margin-bottom: 53px;
+    }
+    .optimisation{
+        background-size: 800px 450px;
+        min-height: 600px;
+    }
+    .optimisation h3{
+        color: #299CBD;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: normal;
+        padding-top: 60px;
+    }
+    .optimisation p, .optimisation h3{
+        margin-left: 35%;
+        text-align: left;
+    }
+    
+}
+@media (max-width: 1250px){
+    .optimisation{
+        background-size: 650px 350px;
+        min-height: 650px;
+    }
+    .optimisation p, .optimisation h3{
+        margin-left: 30%;
+        text-align: left;
+    }
+}
+@media (max-width: 1100px){
+    .container__text h2{
+        font-size: 26px;
+    }
+    .container__text h1{
+        font-size: 54px;
+    }
+    p{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 26px;
+        line-height: 12px;
+    }
+    .optimisation{
+        background-size: 550px 300px;
+        
+    }
+    .optimisation h3{
+        font-size: 20px;
+    }
+    .blue-text{
+        font-size: 32px;
+    }
+    .optimisation p, .optimisation h3{
+        margin-left: 30%;
+        text-align: left;
+    }
+    .container{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+@media(max-width: 950px){
+    .container{
+        width: 80%;
+    }
+    .container__text h2{
+        font-size: 22px;
+    }
+    .container__text h1{
+        font-size: 50px;
+    }
+    .review{
+        min-height: 750px;
+    }
+    .optimisation{
+        background-size: 450px 250px;
+        min-height: 750px;
+    }
+    .optimisation p, .optimisation h3{
+        margin-left: 35%;
+        text-align: left;
+    }
+    .form{
+        margin-top: 30%;
+    }
+    
+    .icon{
+        width: 95px;
+        height: 95px;
+    }
+    .icon img{
+        top: 20%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 800px){
+    .main-screen{
+        min-height: 900px;
+    }
+    h3{
+        line-height: 30px;
+        padding-top: 50px;
+    }
+    p{
+        line-height: 25px;
+    }
+    .container__text h2{
+        font-size: 18px;
+    }
+    .container__text h1{
+        font-size: 40px;
+    }
+    .oportunity__row{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .oportunity__row__element{
+        width: 200px;
+        
+        margin: 0 auto 50px auto;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 10px auto;
+    }
+    .icon{
+        margin-bottom: 5px;
+        width: 100px;
+        height: 100px;
+    }
+    .icon img{
+        top: 20%;
+        left: 20%;
+    }
+    hr{
+        margin: 10px auto 30px auto;
+    }
+    .picture{
+        width: 300px;
+        margin: 0 auto 50px auto;
+    }
+    .picture img{
+        margin-bottom: 15px;
+    }
+    button{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 5px;
+        width: 200px;
+        height: 50px;
+    }
+    .note .container img {
+        width: 300px;
+        display: block;
+        padding-top: 82px;
+        margin: 0 auto 30px;
+    }
+    .blue-text{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 20px 0 30px;
+    }
+    .gray-text{
+        font-size: 16px;
+    }
+    .optimisation{
+        background: white;
+        min-height: 850px;
+    }
+    .optimisation__img{
+        width: 300px;
+        display: block;
+        margin: 20px auto 40px auto;
+    }
+    .optimisation h3{
+        padding-top: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .optimisation p{
+        margin: 0 ;
+        text-align: left;
+    }
+    footer{
+        height: 100px;
+        padding-top: 25px;
+        font-size: 12px;
+    }
+    .form{
+        margin-top: 40%;
+    }
+}
+@media (max-width: 550px){
+    .optimisation{
+        min-height: 950px;
+    }
+    .optimisation__img{
+        margin: 15px auto 30px auto;
+    }
+    .optimisation .container p{
+       line-height: 23px;
+       font-size: 15px;
+       
+    }
+    p{
+        font-size: 15px;
+    }
+    .oportunity__row__element{
+        width: 200px;
+        
+        margin: 0 auto 30px auto;
+    }
+    .form{
+        width: 250px;
+        padding: 40px 30px;
+        margin-top: 50%;
+    }
+    input{
+        width: 180px;
+    }
+    .form-button{
+        width: 180px;
+        height: 40px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
