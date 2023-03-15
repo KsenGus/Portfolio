@@ -3,12 +3,10 @@ let links = document.querySelectorAll('a[href^="#"]'),
     layer = document.querySelector('.layer'),
     form = document.querySelector('.form'),
     formClose = document.querySelector('.form-close');
-
 for (let link of links) {
     link.addEventListener('click', function (e) {
         e.preventDefault();
-        const id = link.getAttribute('href');
-        document.querySelector(id).scrollIntoView({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
         });
     });
