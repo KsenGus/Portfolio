@@ -1,0 +1,352 @@
+$main_color : #663F2E
+$second_color : #928B70
+@mixin circle
+    &:before
+        position: absolute
+        content: ''
+        width: 36px
+        height: 36px
+        background: $second_color
+        border-radius: 100%
+        z-index: -1
+        top: -25%
+        left: 0
+@mixin mix1
+    width: 1140px
+    margin: 0 auto
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    
+h1, h2
+    margin: 0
+a
+    cursor: pointer
+.container
+    @include mix1
+.hamburger
+    position: fixed
+    top: 20px
+    right: 30px
+    cursor: pointer
+.menu
+    position: fixed
+    display: none
+    top: 0
+    padding: 140px 40px
+    z-index: 4
+    width: 345px
+    height: 100%
+    color: white
+    background: $main_color
+    &__close
+        position: absolute
+        cursor: pointer
+        top: 25px
+        right: 25px
+        font-size: 40px
+        line-height: 40px
+        font-family: Arial, Helvetica, sans-serif
+    &__list
+        margin-bottom: 280px
+    li
+        margin-bottom: 15px
+    &__item 
+        font-weight: 700
+        font-size: 24px
+        line-height: 36px
+        color: white
+        text-decoration: none
+    &__icons
+       width: 90px
+       display: flex
+       justify-content: space-between
+       margin: 0 auto
+    &__icon 
+        img
+            transform: rotate(90deg)
+.introduction
+    position: relative
+    z-index: 2
+    padding-left: 10px
+    font-weight: 700px
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 6px
+    @include circle
+    &_promo
+        margin-bottom: 9px
+    &_abilities, &_portfolio
+        text-align: center
+        &::before
+            left: 49%    
+.title
+    font-size: 48px
+    line-height: 60px
+    &_promo
+        margin-bottom: 25px
+        width: 532px
+    &_abilities, &_portfolio
+        text-align: center
+        margin-bottom: 25px
+
+.aside
+    position: fixed
+    top: 230px
+    left: 3%
+    height: 340px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    z-index: 3
+    &__divider
+        border: 2px solid #000000
+        width: 0px
+        height: 70px
+    &__social
+        height: 150px
+        width: 25px   
+        span
+            transform: rotate(-90deg) translate(-30%, -345%) 
+            display: block
+            width: 150px
+
+.promo
+    height: 800px
+    font-weight: 700
+    padding: 206px 0
+    background: url("../img/Group 1.png") center/cover no-repeat 
+    &__link
+        text-decoration: none
+        color: black
+        font-size: 14px
+        line-height: 21px
+
+.button
+    cursor: pointer
+    background: $main_color
+    border: none
+    color: white
+    font-weight: 700
+    font-size: 14px
+    line-height: 21px
+    &_small
+        width: 135px
+        height: 45px
+        margin-right: 44px
+    &_big
+        width: 219px
+        height: 45px
+
+.divider
+    width: 60px
+    height: 3px
+    background: $second_color
+.about
+    margin-top: 120px
+    &__description
+        padding: 0 70px 0 100px
+    &__paragraph
+        margin: 20px 0 30px 0
+        font-weight: 500
+        font-size: 16px
+        line-height: 21px
+    &__skills
+        display: grid
+        grid-template-columns: repeat(2, 260px)
+        row-gap: 20px
+    &__skill
+        display: grid 
+        grid-template-columns: 40px 200px
+        column-gap: 20px
+    &__txt
+        width: 200px
+    &__icon
+        position: relative
+        @include circle
+        grid-row: 1/3
+        padding: 15px 0 0 15px
+        &::before
+            top: 0
+.subtitle
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    &__skill
+        margin-bottom: 6px
+
+.descr
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+
+        
+.grid-container
+    display: grid
+    @include mix1
+    grid-template-columns: 400px 740px
+.abilities
+    margin-top: 100px
+    .divider
+        margin: 0 auto 60px auto
+    &__grid
+        display: grid
+        @include mix1
+        grid-template-columns: repeat(4, 270px)
+        grid-template-rows: repeat(2, 270px)
+        gap: 13px
+    &__ability
+        border: 1px solid #000000
+        padding: 30px
+    &__icon
+        height: 50px
+        display: block
+
+.rating
+    display: grid
+    width: 1140px
+    margin: 128px auto 120px auto
+    grid-template-columns: repeat(3, 350px)
+    grid-template-rows: repeat(2, 70px)
+    column-gap: 45px
+    row-gap: 30px
+    &__text
+        display: flex
+        justify-content: space-between
+        margin-bottom: 27px
+        .subtitle
+            position: relative
+            @include circle
+    &__bar
+        width: 100%
+        height: 14px
+        background: #E8E4DE
+        border-radius: 4px
+    &__level
+        height: 100%
+        background: $second_color
+        border-radius: 4px
+            
+.portfolio
+    &__links
+        width: 350px
+        margin: 0 auto 20px auto
+        display: flex
+        justify-content: space-between
+    &__link
+        text-decoration: none
+        color: black
+        font-size: 16px
+        text-align: center
+        &.active
+            font-weight: 700
+    &__content
+        width: 1140px
+        display: grid
+        margin: 0 auto 120px auto
+        grid-auto-rows: 280px
+        animation-name: ease
+        animation-duration: 2s
+        &.design
+            grid-template: repeat(2, 280px) / repeat(4, 280px)
+            gap: 5px
+        &.web
+            grid-template: repeat(2, 280px) / repeat(3, 370px)
+            gap: 12px
+            display: none
+    &__item
+        overflow: hidden
+        img
+            &:hover
+                animation-name: zoom
+                animation-duration: 1s
+        &.vertical
+            grid-row: 1 / 3
+            grid-column: 4 / 5
+            &1
+                grid-row: 1 / 3
+                grid-column: 3 / 4
+        &.horisontal
+            grid-row: 2 / 3
+            grid-column: 2 / 4
+            &1
+                grid-column: 1 / 3
+    .divider
+        margin: 0 auto 60px auto       
+.contacts
+    &__content
+        height: 700px
+        padding: 0 70px 0 100px
+    &__txt
+        margin: 20px 0
+    &__icons
+        display: flex
+        gap: 20px
+
+.form
+    &__inputs
+        width: 585px
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+    &__input
+        position: relative
+        input
+            width: 280px
+            height: 45px
+            padding: 10px
+            border: 1px solid #000000
+            font-size: 12px
+        label
+            position: absolute
+            padding: 0 8px
+            background: white
+            left: 12px
+            top: -10px      
+    &__textarea
+        position: relative
+        textarea
+            width: 585px
+            min-height: 190px
+            border: 1px solid #000000
+            padding: 10px
+            font-size: 12px
+        label
+            position: absolute
+            padding: 0 8px
+            background: white
+            left: 12px
+            top: -10px 
+    &__triggers
+        width: 585px
+        display: flex  
+        justify-content: space-between   
+        margin-top: 30px
+    &__policy
+        padding: 12px 0
+        a
+            text-decoration: none
+@keyframes zoom
+    from
+        transform: scale(1)
+    to
+        transform: scale(1.2)
+
+@keyframes ease
+    from
+        opacity:0.5
+    to
+        opacity: 1
+
+
+@media ( max-width: 1439px )
+    .aside 
+        display: none
+
+
+@import '/blocks/media1200';
+@import '/blocks/media992';
+@import '/blocks/media768';
+@import '/blocks/media576';
