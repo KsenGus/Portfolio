@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+  .menu {
+    width: 300px;
+  }
+  .container {
+    max-width: 540px;
+  }
+  .promo {
+    background: url("../img/Group 2.png") 54%/cover no-repeat;
+  }
+  .grid-container {
+    width: 540px;
+    grid-template: 540px auto auto/1fr;
+  }
+  .introduction_about, .introduction_contacts {
+    text-align: center;
+  }
+  .introduction_about::before, .introduction_contacts::before {
+    left: 48%;
+  }
+  .about__photo img {
+    display: block;
+    margin: 0 auto;
+  }
+  .about__skills {
+    width: 540px;
+    grid-template-columns: repeat(2, 240px);
+    gap: 30px;
+  }
+  .about__skill {
+    width: 240px;
+    grid-template-columns: 40px 200px;
+  }
+  .about .divider {
+    margin: 0 auto;
+  }
+  .title {
+    line-height: 39px;
+  }
+  .title_promo {
+    width: 300px;
+  }
+  .title_about, .title_contacts {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .descr {
+    width: 200px;
+  }
+  .portfolio__content {
+    width: 540px;
+  }
+  .portfolio__content.design {
+    grid-template: repeat(3, 265px)/repeat(2, 265px);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .portfolio__content.web {
+    grid-template: repeat(2, 265px)/repeat(2, 265px);
+    gap: 10px;
+  }
+  .abilities__grid {
+    width: 540px;
+    grid-template-columns: repeat(2, 265px);
+    grid-template-rows: repeat(3, 265px);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .rating {
+    display: grid;
+    width: 340px;
+    margin: 128px auto 120px auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 70px;
+    row-gap: 50px;
+  }
+  .contacts__content, .contacts__photo, .contacts .divider {
+    margin: 0 auto;
+  }
+  .form__input {
+    margin-bottom: 15px;
+  }
+  .form__input input {
+    width: 300px;
+  }
+}/*# sourceMappingURL=media768.css.map */

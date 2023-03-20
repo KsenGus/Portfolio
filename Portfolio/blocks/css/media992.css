@@ -1,0 +1,98 @@
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .promo {
+    background: url("../img/Group 2.png") 30%/cover no-repeat;
+  }
+  .grid-container {
+    width: 720px;
+    grid-template-columns: 300px 400px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .about__photo img {
+    width: 300px;
+  }
+  .about__skills {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    grid-template: repeat(1, minmax(115px, auto))/repeat(2, 195px);
+  }
+  .about__skill {
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+    grid-template-columns: 40px 150px;
+  }
+  .about__txt {
+    width: 150px;
+  }
+  .abilities__grid {
+    width: 620px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 270px);
+    grid-template-rows: repeat(3, 270px);
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
+  }
+  .portfolio__content {
+    width: 620px;
+  }
+  .portfolio__content.design {
+    grid-template: repeat(3, 280px)/repeat(2, 280px);
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
+  }
+  .portfolio__content.web {
+    grid-template: repeat(2, 280px)/repeat(2, 280px);
+    gap: 10px;
+  }
+  .portfolio__item.vertical1 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .rating {
+    width: 650px;
+    margin: 128px auto 120px auto;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 70px);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 50px;
+  }
+  .contacts__photo img {
+    width: 300px;
+  }
+  .form__inputs {
+    width: 300px;
+    display: block;
+  }
+  .form__input {
+    width: 300px;
+    display: block;
+  }
+  .form__textarea textarea {
+    width: 400px;
+    height: 143px;
+  }
+  .form__triggers {
+    width: 400px;
+  }
+  .form__policy {
+    display: block;
+    width: 159px;
+    height: 36px;
+  }
+  .button_big {
+    width: 180px;
+  }
+}/*# sourceMappingURL=media992.css.map */

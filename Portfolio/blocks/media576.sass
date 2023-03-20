@@ -1,0 +1,101 @@
+@media ( max-width: 576px )
+    .title
+        font-size: 24px
+    .container
+        max-width: 100%
+        padding: 0 20px
+    .menu
+        width: 250px
+        &__item
+            font-size: 18px
+    .hamburger
+        right: 20px
+    .descr
+        font-family: 'Poppins'
+        font-size: 12px
+        line-height: 18px
+    .about
+        &__description
+            padding: 0
+        &__paragraph
+            font-size: 12px
+            line-height: 18px
+        &__skills
+            row-gap: 20px
+            width: 300px
+            grid-template-columns: 300px
+            grid-template-rows: 220px 150px
+        &__skill
+            grid-template-columns: 40px 195px
+            column-gap: 15px
+    .grid-container
+        width: 300px
+        grid-template: 450px auto auto / 1fr
+        row-gap: 20px
+    .abilities
+        &__grid
+            width: 310px
+            margin: 0 auto
+            grid-template-columns: 270px
+            grid-template-rows: 270px
+            gap: 30px
+    .rating
+        width: 340px
+        margin: 128px auto 120px auto
+        grid-template-columns: 300px
+        grid-template-rows: 70px
+        row-gap: 50px
+    .portfolio
+        &__links
+            width: 200px
+        &__content
+            width: 320px
+            margin: 0 auto 120px auto
+            img
+                display: block
+                width: 320px
+                height: 320px
+                object-fit: cover
+            &.design
+                grid-template: 280px / 370px
+            &.web
+                grid-template: 280px / 370px
+                gap: 12px                
+
+        &__item
+            display: block
+            img
+                &:hover
+                    animation: none
+            &.vertical 
+                grid-column: 1/2
+                grid-row: 4/5
+                &1
+                    grid-row: 3/4
+                    grid-column: 1/2
+            &.horisontal
+                grid-column: 1/2
+                grid-row: 6/7
+                &1
+                    grid-row: 4/5
+                    grid-column: 1/2
+
+    .contacts
+        &__photo
+            display: none
+        &__content
+            padding: 0
+            width: 300px
+            height: 800px
+    .form       
+        &__textarea
+            textarea
+                width: 300px
+                height: 143px 
+        &__triggers
+            display: block
+            width: 300px
+        &__policy
+            display: block
+            width: 159px
+            height: 36px

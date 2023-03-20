@@ -1,0 +1,97 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .promo button {
+    margin-top: 30px;
+  }
+  .grid-container {
+    width: 960px;
+    grid-template-columns: 400px 520px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+  .about__description {
+    padding: 0;
+  }
+  .about__skills {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+  }
+  .about__skill {
+    grid-template-columns: 40px 195px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .abilities__grid {
+    display: grid;
+    width: 850px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 20px;
+  }
+  .portfolio__content {
+    width: 860px;
+    margin: 0 auto 120px auto;
+    grid-auto-rows: 280px;
+  }
+  .portfolio__content.design {
+    grid-template: repeat(2, 280px)/repeat(3, 280px);
+    gap: 10px;
+  }
+  .portfolio__content.web {
+    grid-template: repeat(2, 280px)/repeat(3, 280px);
+    gap: 10px;
+  }
+  .portfolio__item.vertical {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .portfolio__item.vertical1 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .portfolio__item.horisontal {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .portfolio__item.horisontal1 {
+    grid-column: 1/2;
+  }
+  .rating {
+    width: 750px;
+    margin: 128px auto 120px auto;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 70px);
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 30px;
+  }
+  .contacts__content {
+    padding: 0;
+  }
+  .form__inputs {
+    width: 520px;
+  }
+  .form__input input {
+    width: 250px;
+  }
+  .form__textarea textarea {
+    width: 520px;
+  }
+  .form__triggers {
+    width: 520px;
+  }
+  .form__policy {
+    width: 200px;
+  }
+}/*# sourceMappingURL=media1200.css.map */

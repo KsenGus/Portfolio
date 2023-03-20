@@ -1,0 +1,126 @@
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .menu {
+    width: 250px;
+  }
+  .menu__item {
+    font-size: 18px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .descr {
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about__description {
+    padding: 0;
+  }
+  .about__paragraph {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about__skills {
+    row-gap: 20px;
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 220px 150px;
+  }
+  .about__skill {
+    grid-template-columns: 40px 195px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .grid-container {
+    width: 300px;
+    grid-template: 450px auto auto/1fr;
+    row-gap: 20px;
+  }
+  .abilities__grid {
+    width: 310px;
+    margin: 0 auto;
+    grid-template-columns: 270px;
+    grid-template-rows: 270px;
+    gap: 30px;
+  }
+  .rating {
+    width: 340px;
+    margin: 128px auto 120px auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 70px;
+    row-gap: 50px;
+  }
+  .portfolio__links {
+    width: 200px;
+  }
+  .portfolio__content {
+    width: 320px;
+    margin: 0 auto 120px auto;
+  }
+  .portfolio__content img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .portfolio__content.design {
+    grid-template: 280px/370px;
+  }
+  .portfolio__content.web {
+    grid-template: 280px/370px;
+    gap: 12px;
+  }
+  .portfolio__item {
+    display: block;
+  }
+  .portfolio__item img:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .portfolio__item.vertical {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .portfolio__item.vertical1 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .portfolio__item.horisontal {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .portfolio__item.horisontal1 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .contacts__photo {
+    display: none;
+  }
+  .contacts__content {
+    padding: 0;
+    width: 300px;
+    height: 800px;
+  }
+  .form__textarea textarea {
+    width: 300px;
+    height: 143px;
+  }
+  .form__triggers {
+    display: block;
+    width: 300px;
+  }
+  .form__policy {
+    display: block;
+    width: 159px;
+    height: 36px;
+  }
+}/*# sourceMappingURL=media576.css.map */
